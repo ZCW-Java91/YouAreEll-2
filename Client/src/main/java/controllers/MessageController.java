@@ -57,13 +57,6 @@ public class MessageController {
             Message result = tctrl.postMessage(cmd.getArg(1), cmd.getArg(2), cmd.getRest(3));
             System.out.println(new MessageTextView(result).toString());
         }
-        if (cmd.getCmd() == Command.Verb.MYMSGS) {
-            List<Message> msgs = tctrl.getMessages();
-            List<Message> myMsgs = getMessagesForId();
-            for (Message m : msgs) {
-                if (m.)
-                System.out.println(new MessageTextView(msgs.get(i)).toString());
-            }
-        }
+
     }
 }
