@@ -89,7 +89,7 @@ public class Command {
     private Command(Verb v) { this.currentCmd = v;}
 
     public Command interpret(String s) {
-        System.out.println("intepreting ["+s+"]");
+        System.out.println("interpreting ["+s+"]");
 
         tokens = s.split(" ");
         Verb verb = Verb.get(tokens[0]);
